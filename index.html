@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <title>Метод оценвания памятка</title> 
+</head>
+<body>
+    <div class="accordion">
+        <div class="accordion-content">
+            <header>
+                <span class="title">МЕТОДИКА ОЦЕНИВАНИЯ</span>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+
+            <div class="description">
+               <img src="./1.png" alt="" class="img-main">
+            </div>
+        </div>
+
+        <div class="accordion-content">
+            <header>
+                <span class="title">МЕТОДИКА ОЦЕНИВАНИЯ ВИДЕО</span>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+
+            <div class="description">
+            <video class="videos" controls>
+                <source src="оценивание.webm" type="video/mp4">
+            </video>
+            </div>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <span class="title">КОЛЛИЧЕСТВО РАБОТ ЗА ВТОРУЮ ЧЕТВЕРТЬ</span>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+
+            <div class="description">
+<img src="./2.png" alt="" class="imgs-2">
+<img src="./3.png" alt="" class="imgs-2">
+            </div>      
+        </div>
+        <div class="accordion-content">
+            <header>
+                <span class="title">ТЕСТЫ ДЛЯ ЗАКРЕПЛЕНИЯ</span>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+
+            <div class="description">
+<div class="test">
+    <section id="p0">
+        <h3>1 - Сколько работ мы должны будем сделать по всемирной истории и истории Узбекистана</h3>
+        <label>
+            <input type="radio"  value="1"  name="p0" onclick="respuesta(0,this)"> три основной работы
+        </label>
+        <label>
+            <input type="radio"  value="2"  name="p0" onclick="respuesta(0,this)"> только две
+        </label>
+        <label>
+            <input type="radio"  value="3"  name="p0" onclick="respuesta(0,this)"> я вообще ничего делать не буду
+        </label>
+    </section>
+    <section id="p1">
+        <h3>2- Какие работы оцениваются по максимальному баллу -30% и считаются очень важными для выполнения?</h3>
+        <label>
+            <input type="radio"  value="1"  name="p1" onclick="respuesta(1,this)"> вебинары и тесты на LO
+        </label>
+        <label>
+            <input type="radio"  value="2"  name="p1" onclick="respuesta(1,this)"> Контрольные работы и самостоятельные работы (задания открытого типа)
+        </label>
+        <label>
+            <input type="radio"  value="3"  name="p1" onclick="respuesta(1,this)"> Не помню что то там
+        </label>
+    </section>
+    <section id="p2">
+        <h3>3 - За какой вид заданий предусмотрена оценивание в 20% от всех задний и обязательная для выполнения?</h3>
+        <label>
+            <input type="radio"  value="1"  name="p2" onclick="respuesta(2,this)"> Задание открытого типа
+        </label>
+        <label>
+            <input type="radio"  value="2"  name="p2" onclick="respuesta(2,this)"> Контрольная работа
+        </label>
+        <label>
+            <input type="radio"  value="3"  name="p2" onclick="respuesta(2,this)"> Проектная работа
+        </label>
+    </section>
+    <section id="p3">
+        <h3>4 - В каком случае Вы можете получить максимальную оценку во второй четверти? Какие главне условия должны соблюдаться?</h3>
+        <label>
+            <input type="radio"  value="1"  name="p3" onclick="respuesta(3,this)"> Все три вида заданий нужно выполнить
+        </label>
+        <label>
+            <input type="radio"  value="2"  name="p3" onclick="respuesta(3,this)"> Все тесты решить на LO?
+        </label>
+        <label>
+            <input type="radio"  value="3"  name="p3" onclick="respuesta(3,this)"> Участвовать на вебинарах
+        </label>
+    </section>
+    <button onclick="corregir()">ПРОВЕРИТЬ</button>
+    <h2>Ваши правильные ответы: <span id="resultado"></span></h2>
+</div>
+</div>      
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
